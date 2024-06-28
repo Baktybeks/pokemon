@@ -9,7 +9,7 @@ const ModalPokemon = ({
 }) => {
     return (
         <>
-            <div className={classes.modalWrapper}></div>
+            <div className={classes.modalWrapper}  onClick={handleShow}/>
             <div className={classes.modalContent}>
                 <div className={classes.close} onClick={handleShow}>
                     <div className={classes.img_box}>
