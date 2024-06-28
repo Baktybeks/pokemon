@@ -49,11 +49,11 @@ const Pokemon = ({ pokemon }) => {
                         <p className={classes.name}>{pokemon.name}</p>
                     </div>
                     <div className={classes.skills}>
-                        <p>Abilities: <span>{pokemonOne?.abilities?.map(value => value.ability.name).join(', ')}</span>
+                        <p className={classes.skill}>Abilities: <span>{pokemonOne?.abilities?.map(value => value.ability.name).join(', ')}</span>
                         </p>
-                        <p>Stats: <span>{pokemonOne?.stats?.map(value => value.stat.name).join(', ')}</span></p>
-                        <p>Types: <span>{pokemonOne?.types?.map(value => value.type.name).join(', ')}</span></p>
-                        <p>Some-moves: <span>{pokemonOne?.moves?.slice(0, 5).map(value => value.move.name).join(', ')}</span>
+                        <p className={classes.skill}>Stats: <span>{pokemonOne?.stats?.map(value => value.stat.name).join(', ')}</span></p>
+                        <p className={classes.skill}>Types: <span>{pokemonOne?.types?.map(value => value.type.name).join(', ')}</span></p>
+                        <p className={classes.skill}>Some-moves: <span>{pokemonOne?.moves?.slice(0, 5).map(value => value.move.name).join(', ')}</span>
                         </p>
                     </div>
                 </ModalPokemon>
